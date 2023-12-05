@@ -1,0 +1,56 @@
+#projector {
+    background-color: rgb(207, 232, 220);
+    border: 2px solid rgb(79, 185, 227);
+    padding: 10px; border-radius: 5px;
+    width: 30%;
+    text-align: center;
+    margin: 30px auto;
+    font-weight: bold;
+}
+
+.wrapper {
+    display: grid; grid-gap: 10px;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.wrapper > div {
+    height: 40px;
+    text-align: center;
+    background-color: rgb(207, 232, 220);
+    border: 2px solid rgb(79, 185, 227);
+    padding: 10px; border-radius: 5px;
+    font-weight: bold;
+}
+.wrapper > div:nth-of-type(8) {
+    background-color: lightcoral;
+}
+
+.dataWrapper {
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: 35px 35px;
+    grid-template-columns: 0.1fr 0.3fr 0.2fr 0.2fr;
+}
+.dataWrapper > label {
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5px;
+}
+.dataWrapper > button:nth-of-type(1) {
+    font-size: 20px;
+    grid-row: 1 / 3;
+    grid-column: 3;
+}
+.dataWrapper > button:nth-of-type(2) {
+    font-size: 20px;
+    grid-row: 1 / 3;
+    grid-column: 4;
+}
+
+body > p:nth-of-type(1) {
+    font-size: 20px;
+    font-weight: bold;
+}
+body > p:nth-of-type(2) {
+    font-size: 15px;
+}

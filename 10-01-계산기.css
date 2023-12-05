@@ -1,0 +1,29 @@
+.wrapper {
+    display: grid; grid-gap: 10px;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.wrapper > h1 {
+    background-color: cornsilk;
+    grid-column: 1 / 5;
+}
+.wrapper > div {
+    font-size: 50px;
+    text-align: center;
+    background-color: rgb(207, 232, 220);
+    border: 2px solid rgb(79, 185, 227);
+    padding: 10px; border-radius: 5px;
+}
+
+#n0 {
+    grid-column: 1 / 4;
+}
+
+button {
+    font-size: 30px;
+    color: white;
+    width: 120px; height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color:dodgerblue;
+}
